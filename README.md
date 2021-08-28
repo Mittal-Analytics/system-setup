@@ -12,8 +12,8 @@ Simple Python functions for common tasks.
 
 Install the repository using `pip`
 
-```
-pip install github-private-repo-link
+```bash
+pip install https://github.com/Mittal-Analytics/system-setup/archive/main.zip
 ```
 
 ### Usage
