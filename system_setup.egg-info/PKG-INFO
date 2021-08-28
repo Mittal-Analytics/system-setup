@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: system-setup
+Version: 0.0.1
+Summary: Simple functions for common bash commands
+Home-page: https://github.com/arocketman/git-and-pip
+Author: Pratyush Mittal
+Author-email: pratyush@hey.com
+License: UNKNOWN
+Description: # System Setup Utils
+        
+        This is kind of a wrapper around that allows us to run bash commands easily from Python.
+        
+        No more YML files or configurations.
+        
+        Simple Python functions for common tasks.
+        
+        ## Getting started
+        
+        ### Installation
+        
+        Install the repository using `pip`
+        
+        ```
+        pip install github-private-repo-link
+        ```
+        
+        ### Usage
+        
+        Start using the functions
+        
+        ``` python
+        from system_setup import utils as setup
+        
+        # create directory
+        setup.bash('mkdir -p /home/ubuntu/project')
+        
+        # initialize git directory
+        setup.bash('git init /home/ubuntu/repos')
+        
+        # run sudo commands
+        setup.bash('sudo mkdir -p /app')
+        
+        # replace line in a file
+        setup.replace_line('/etc/hosts/', '#127.0.0.1 foobar.com', '127.0.0.1 foobar.com')
+        ```
+        
+        ### Recipes
+        
+        These are few common recipes already included.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

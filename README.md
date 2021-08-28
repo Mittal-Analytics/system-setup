@@ -1,4 +1,4 @@
-# Module to make it easier to setup new systems
+# System Setup Utils
 
 This is kind of a wrapper around that allows us to run bash commands easily from Python.
 
@@ -39,3 +39,18 @@ setup.replace_line('/etc/hosts/', '#127.0.0.1 foobar.com', '127.0.0.1 foobar.com
 ### Recipes
 
 These are few common recipes already included.
+
+[todo]
+
+
+## Development
+
+Please create a pull-request to contribute more common utils.
+
+### Publishing new releases
+
+Update the version in `setup.py`. The create the release.
+
+```bash
+python setup.py sdist
+```
