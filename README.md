@@ -20,7 +20,20 @@ pip install github-private-repo-link
 
 Start using the functions
 
-```
+``` python
+from system_setup import utils as setup
+
+# create directory
+setup.bash('mkdir -p /home/ubuntu/project')
+
+# initialize git directory
+setup.bash('git init /home/ubuntu/repos')
+
+# run sudo commands
+setup.bash('sudo mkdir -p /app')
+
+# replace line in a file
+setup.replace_line('/etc/hosts/', '#127.0.0.1 foobar.com', '127.0.0.1 foobar.com')
 ```
 
 ### Recipes
